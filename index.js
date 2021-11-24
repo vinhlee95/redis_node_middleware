@@ -1,4 +1,5 @@
 const express = require('express')
+const {cacheMiddleware} = require("./cacheMiddleware");
 const app = express()
 const PORT = 8080
 
@@ -7,7 +8,7 @@ app.listen(PORT, () => {
 })
 
 
-app.get('/stores', (req, res) => {
+app.get('/stores', cacheMiddleware, (req, res) => {
     const stores = [
         {id: 1, name: 'Apple'},
         {id: 1, name: 'Samsung'},

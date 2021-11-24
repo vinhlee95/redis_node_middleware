@@ -1,0 +1,19 @@
+{
+  "name": "redis_node_middleware",
+  "version": "1.0.0",
+  "description": "A Node.js application using Redis cache ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon index.js"
+  },
+  "author": "Vinh Le (lethanhvinh95@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "redis": "3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  }
+}
